@@ -36,8 +36,8 @@ h3 {font-size:14px; font-weight:bold; color:#333;}
 
 .center{width:960px;margin:0 auto;}
 
-/*SlideShow Begin*/
-#cu3er-container {margin-top:40px;padding-left:0px;padding-right:0px;width:960px;}
+/*SlideShow Begin
+#cu3er-container {margin-top:40px;padding-left:0px;padding-right:0px;width:960px;}*/
 #cubershadow{width:960px;height:372px;background:url(images/seguran%C3%A7a.jpg) no-repeat bottom;}
 /*SlideShow End*/
 
@@ -79,3 +79,9 @@ a.button{background:url(images/buttonr.gif) no-repeat right; padding:3px 0px; ma
 .textbox2{padding:10px 30px; background:url(images/textbox2bg.gif) repeat-x;}
 .feed{width:auto; float:left;}
 .feed img{ border: solid 0px; margin-top:120px; padding:0px 7px;}
+
+/*Form*/
+fieldset {width: 350px;margin: 40px auto;border: 2px solid #000;}
+label {display: block;margin-bottom: 10px;}
+[type=text],[type=password] {width: 99%;height: 20px;border: 2px solid #000;outline: none;}
+
