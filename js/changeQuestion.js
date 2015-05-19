@@ -1,4 +1,4 @@
-var maxPerguntas = 22;
+var maxPerguntas = 26;
                         function aoCarregar(){
                                 escondeTudo();
                                 document.getElementById('pergunta1').style.display = "block";
