@@ -1,4 +1,4 @@
-function RadioHab() {
+function RadioHab()  {
 
 	var form = document.questionario;
 	var msg="Alternativa não marcada";
@@ -8,6 +8,7 @@ function RadioHab() {
 	for(var i=0;i<Radio.length;i++) {
 		if(Radio[i].checked) {
 			msg = "Selecionado: " + Radio[i].value;
+            
 		}
 	}
 	alert(msg);
