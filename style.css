@@ -85,3 +85,60 @@ fieldset {width: 350px;margin: 40px auto;border: 2px solid #000;}
 label {display: block;margin-bottom: 10px;}
 [type=text],[type=password] {width: 99%;height: 20px;border: 2px solid #000;outline: none;}
 
+/* INICIO DO CSS DO FORMULARIO CONTATO*/
+
+#form ul li {
+	margin:20px 0;
+	list-style:none;
+	position:relative;
+	clear:both;
+}
+
+#form label {
+	margin:5px 0;
+	line-height:45px;
+	width:80px;
+	text-align:left;
+	float:left;
+	color:#666;
+}
+
+#form input#name, #form input#email, #form input#subject, #form textarea {
+	float:left;
+	padding:15px;
+	border:1px solid #CCCCCC;
+	background:#fcfcfc;
+	border-radius:5px;
+	color:#BA5301;
+}
+#form input#name, #form input#email, #form input#subject {
+	width:350px;
+}
+
+#form textarea {
+	width:400px;
+	height:80px;
+	resize:none;
+}
+
+#form input {
+	color:#999;
+	float:left;
+}
+
+#form input#send_message {
+	width:100px;
+	height:40px;
+	margin:20px 0 0 80px;
+	cursor:pointer;
+	font-size:20px;
+	color:black;
+	background:#999;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+
+#form input#send_message:hover {
+	color:#999;
+	background:#dcdcdc;
+	border-color:#999;

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Risk Assessment</title>
+<meta charset="utf-8">    
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<!--Header Begin-->
+<div id="header">
+  <div class="center">
+    <div id="logo"><a href="#">Risk Assessment</a></div>
+    <!--Menu Begin-->
+    <div id="menu">
+      <ul>
+        <li><a href="index.html"><span>Início</span></a></li>
+        <li><a  href="about.html"><span>Sobre</span></a></li>
+        <li><a   href="questionario.html"><span>Questionário</span></a></li>
+        <li><a class="active" href="contato.html"><span>Contato</span></a></li>
+      </ul>
+    </div>
+    <!--Menu END-->
+  </div>
+</div>
+<div id="toprowsub">
+  <div class="center">
+    <h2>Contato</h2>
+  </div>
+</div>
+<!--Header END-->
+<!--SubPage Toprow Begin-->
+<div id="midrow">
+  <div class="center">
+    <div class="textbox2">
+        
+        <div id="BoxForm">
+  <form action="enviar_contato.php" method="post" id="form">
+    <ul>                      
+      <li>
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" />
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </li>
+      <li>
+        <label for="subject">Assunto</label>
+        <input type="text" name="subject" id="subject" />
+      </li>
+      <li>
+        <label for="telefone">Telefone</label>
+        <input type="telefone" name="telefone" id="subject" />
+      </li>
+      <li>
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" rows="10" cols="50"></textarea>
+      </li>
+      <li>
+        <input type="submit" id="send_message" value="Enviar" />
+      </li>
+    </ul>
+  </form>
+</div> 
