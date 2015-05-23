@@ -37,7 +37,7 @@
     
 <body onload="javascript:aoCarregar();">
                <a href="javascript:perguntaAnterior();" class="button"><span>Pergunta anterior</span></a>
-               <a href="javascript:proximaPergunta();" class="button"><span>Proxima pergunta</span></a>
+               <a href="javascript:proximaPergunta();" class="button"><span>Proxima pergunta</span></a> 
               
                 <input type="hidden" id="perguntaActual" value=""/><br />
                 <div id="pergunta1">1) Qual seu seu sexo ?
@@ -48,8 +48,8 @@
                     </form>
                 </div>
                 <div id="pergunta2">2) Qual a sua idade ?
-                 <form >
-                        <input type="radio" name="idade" value="1" checked>Menos de 26<br>
+                 <form id="questionario2" >
+                        <input type="radio" name="idade" value="1">Menos de 26<br>
                         <input type="radio" name="idade" value="2">Entre 26 e 35<br>
                         <input type="radio" name="idade" value="3">Entre 36 e 45<br>
                         <input type="radio" name="idade" value="4">Entre 46 e 55<br>
@@ -59,178 +59,196 @@
                 </div>
                 <div id="pergunta3">3) Trabalha na area de :
                  <form>
-                        <input type="radio" name="area" value="1" checked>Produçaõ<br>
+                        <input type="radio" name="area" value="1">Produçaõ<br>
                         <input type="radio" name="area" value="2">Administração<br>
                         <input type="radio" name="area" value="3">Ambas<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta4">4) De uma forma geral,diria que sua saude é:
                  <form>
-                        <input type="radio" name="saude" value="1" checked>Exelente<br>
+                        <input type="radio" name="saude" value="1">Exelente<br>
                         <input type="radio" name="saude" value="2">Muito boa<br>
                         <input type="radio" name="saude" value="3">Boa<br>
                         <input type="radio" name="saude" value="4">Regular<br>
                         <input type="radio" name="saude" value="5">Má<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta5">5) Com que freqüência os funcionários usam óculos de segurança para proteção dos olhos
                                         contra respingos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta6">6) Com que freqüência os funcionários usam protetor facial contra respingos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta7">7) Com que freqüência os funcionários usam capuz de segurança ou boné para proteção 
                    da cabeça contra respingos de produtos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta8">8) Com que freqüência os funcionários usam luvas de segurança ou flanelas para proteção
                     das mãos contra produtos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta9">9) Com que freqüência os funcionários usam calçados que protejam os pés contra umidade 
                    e respingos de produtos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta10">10) Com  que  freqüência  os  funcionários  usam  macacão  para  proteção  dos  troncos 
                     e membros superiores e inferiores contra respingos químicos e umidades?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta11">11) Com que freqüência os funcionários usam conjunto de segurança formado por calça e blusa
                    , para proteção contra umidade e respingos de produtos químicos?
                     <form>
-                        <input type="radio" name="question" value="1" checked>Nunca<br>
+                        <input type="radio" name="question" value="1">Nunca<br>
                         <input type="radio" name="question" value="2">Poucas vezes<br>
                         <input type="radio" name="question" value="3">As vezes<br>
                         <input type="radio" name="question" value="4">Muitas vezes<br>
                         <input type="radio" name="question" value="5">Sempre<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta12">12) O estado de conservação do piso pode ser caracterizado (quando tomado como critério:
                     não ser escorregadio, não apresentar saliências e nem depressões) como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                   <div id="pergunta13">13) A condição de iluminação artificial dos locais de trabalho pode ser caracterizada como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                   <div id="pergunta14">14) O  estado  de  conservação  da  cobertura  pode  ser  caracterizado,  no  que  
                     concerne assegurar proteção contra as intempéries, como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                   <div id="pergunta15">15) O destino dos resíduos sólidos (óleo, embalagem de lubrificantes, filtros de óleo,
                      embalagem de xampu, limpa-vidros, removedores, etc.) pode ser caracterizado como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta16">16) O sistema (canaletas) de escoamento de água e resíduos sólidos do local de trabalho 
                     pode ser caracterizado, como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta17">17) O sistema de emissão de efluentes domésticos/sanitários (sistema de tratamento,
                      caixa separadora água/óleo, etc), pode ser caracterizado como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta18">18) A disposição das sinalizações das ações perigosas, como “não fumar”, “inflamável”,
                      “não é permitido o uso de celular” e “desligar o motor”, pode ser caracterizada como
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                 <div id="pergunta19">19) A conduta para descarga dos líquidos inflamáveis de caminhões tanques, no que
                       concerne a utilização dos procedimentos de seguranças como veículo ligado ao fio terra, uso
                       de cones e fitas, pode ser caracterizado como
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta20">20) As condições de segurança do veículo de transporte dos combustíveis, observando-se
                      a existência de extintor de incêndio com prazo de validade correta, ausência de vazamentos nos registros
                       e tanques e situação mecânica, podem ser caracterizadas como:
                      <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                 </div>
                  <div id="pergunta21">21) O procedimento para evitar e combater incêndios, quando analisados equipamentos
@@ -243,50 +261,55 @@
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                  </div>
                  <div id="pergunta22">22) A conduta de prevenção e  detecção de vazamentos de combustíveis em tanques, 
                      quando observada vida útil, condições do terreno, material do tanque (possibilidade de corrosão), 
                      pode ser caracterizada como:
                     <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                  </div>
                   <div id="pergunta23">23) As condições para descanso dos trabalhadores que realizam suas
                     atividades de pé (existência de assentos em locais que possam ser utilizados pelos
                      funcionários durante as pausas) podem ser caracterizadas como:
                     <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                  </div>
                    <div id="pergunta24">24) Quanto ao ambiente de trabalho quando analisado a preservação da integridade 
                    física e mental dos trabalhadores (utilização da atenção concentrada e  da atenção dispersa ao mesmo 
                    tempo, e nível de stress), este pode ser classificado como:
                     <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                  </div>
                   <div id="pergunta25">25)Analisando as condições e fornecimento dos equipamentos e ferramentas utilizadas
                     pelos trabalhadores em seus ambientes de trabalho, usando como critério o estado de conservação e a 
                     finalidade do equipamento e da ferramenta quanto à natureza do trabalho, estas podem ser classificadas como
                     <form>
-                        <input type="radio" name="question" value="1" checked>Muito ruim<br>
+                        <input type="radio" name="question" value="1">Muito ruim<br>
                         <input type="radio" name="question" value="2">Ruim<br>
                         <input type="radio" name="question" value="3">Regular<br>
                         <input type="radio" name="question" value="4">Bom<br>
                         <input type="radio" name="question" value="5">Muito bom<br>
+                        <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                     </form>
                  </div>
                   <div id="pergunta26">
