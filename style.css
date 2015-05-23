@@ -36,8 +36,7 @@ h3 {font-size:14px; font-weight:bold; color:#333;}
 
 .center{width:960px;margin:0 auto;}
 
-/*SlideShow Begin
-#cu3er-container {margin-top:40px;padding-left:0px;padding-right:0px;width:960px;}*/
+/*SlideShow Begin*/
 #cubershadow{width:960px;height:372px;background:url(images/seguran%C3%A7a.jpg) no-repeat bottom;}
 /*SlideShow End*/
 
@@ -48,12 +47,10 @@ h3 {font-size:14px; font-weight:bold; color:#333;}
 .box p {margin:0px;width:200px;padding:15px 5px 10px 5px;float:left;}
 .last{background:none;}
 
-a.plan{float:left;display:block;width:83px;height:101px;background:url(images/plan.jpg) no-repeat 0px -101px;text-indent:-1000px;}
-a.plan:hover{ background-position: 0px 1px;}
-a.whyus{margin-top:10px;float:left;display:block;width:83px;height:87px;background:url(images/whyus.jpg) no-repeat 0px 0px;text-indent:-1000px;}
-a.whyus:hover{ background-position: 0px -88px;}
-a.support{margin-top:14px;float:left;display:block;width:83px;height:72px;background:url(images/support.jpg) no-repeat 0px 0px;text-indent:-1000px;}
-a.support:hover{ background-position: 0px -70px;}
+a.plan{float:left;display:block;width:83px;height:101px;background:url(images/plan.jpg) no-repeat 0px 1px;text-indent:-1000px;}
+a.whyus{margin-top:10px;float:left;display:block;width:83px;height:87px;background:url(images/whyus.jpg) no-repeat 0px -88px;text-indent:-1000px;}
+a.support{margin-top:14px;float:left;display:block;width:83px;height:72px;background:url(images/support.jpg) no-repeat 0px -70px;text-indent:-1000px;}
+
 
 a.button{background:url(images/buttonr.gif) no-repeat right; padding:3px 0px; margin-left:2px; color:#CCCCCC; text-decoration:none; }
 .button span{background:url(images/buttonl.gif) no-repeat left; padding:3px 5px;}

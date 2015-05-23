@@ -1,6 +1,8 @@
-function RadioHab()  {
-
-	var form = document.questionario;
+function RadioHab() =26 {
+    
+    var i = 0;
+    for( i = 1; i <= RadioHab; i++){
+	document.getElementById('questionario'+i);
 	var msg="Alternativa não marcada";
 	var Radio=null;
 
@@ -12,5 +14,6 @@ function RadioHab()  {
 		}
 	}
 	alert(msg);
+    }
 }
 
