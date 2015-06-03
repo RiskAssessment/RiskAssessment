@@ -4,7 +4,7 @@
 <head>
     <title>Risk Assessment</title>
     <meta charset="utf-8">
-    
+
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -12,7 +12,7 @@
     <!--Header Begin-->
     <div id="header">
         <div class="center">
-            <div id="logo"><a href="#">Risk Assessment</a>
+            <div id="logo"><a href="index.html">Risk Assessment</a>
             </div>
             <!--Menu Begin-->
             <div id="menu">
@@ -21,7 +21,7 @@
                     </li>
                     <li><a href="about.html"><span>Sobre</span></a>
                     </li>
-                    <li><a class="active" href="questionario.html"><span>Questionário</span></a>
+                    <li><a class="active" href="cadastro.html"><span>Questionário</span></a>
                     </li>
                     <li><a href="contato.html"><span>Contato</span></a>
                     </li>
@@ -47,31 +47,8 @@
 
                     <input type="hidden" id="perguntaActual" value="" />
                     <br />
-                    <div id="pergunta1">
-                        <h2>Preencha com seus dados e clique em proxima pergunta!</h2>
-                        <form action="script.php" method="post">
-                            <fieldset>
-                                <legend>Cadastro</legend>
 
-                                <label>
-                                    Nome
-                                    <input class="field" name="nome" type="text" />
-                                </label>
-
-                                <label>
-                                    CPF
-                                    <input class="field" name="cpf" type="text" />
-                                </label>
-                                <label>
-                                    Empresa
-                                    <input class="field" name="empresa" type="text" />
-                                </label>
-
-                                <input class="button" type="submit" value="Enviar" />
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div id="pergunta2">1) Qual seu seu sexo ?
+                    <div id="pergunta1">1) Qual seu seu sexo ?
                         <form name="questionario">
                             <input type="radio" name="question" value="1">Masculino
                             <br>
@@ -80,7 +57,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta3">2) Qual a sua idade ?
+                    <div id="pergunta2">2) Qual a sua idade ?
                         <form id="questionario2">
                             <input type="radio" name="idade" value="1">Menos de 26
                             <br>
@@ -95,7 +72,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta4">3) Trabalha na area de :
+                    <div id="pergunta3">3) Trabalha na area de :
                         <form>
                             <input type="radio" name="area" value="1">Produçaõ
                             <br>
@@ -106,7 +83,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta5">4) De uma forma geral,diria que sua saude é:
+                    <div id="pergunta4">4) De uma forma geral,diria que sua saude é:
                         <form>
                             <input type="radio" name="saude" value="1">Exelente
                             <br>
@@ -121,7 +98,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta6">5) Com que freqüência os funcionários usam óculos de segurança para proteção dos olhos contra respingos químicos?
+                    <div id="pergunta5">5) Com que freqüência os funcionários usam óculos de segurança para proteção dos olhos contra respingos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -136,7 +113,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta7">6) Com que freqüência os funcionários usam protetor facial contra respingos químicos?
+                    <div id="pergunta6">6) Com que freqüência os funcionários usam protetor facial contra respingos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -151,7 +128,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta8">7) Com que freqüência os funcionários usam capuz de segurança ou boné para proteção da cabeça contra respingos de produtos químicos?
+                    <div id="pergunta7">7) Com que freqüência os funcionários usam capuz de segurança ou boné para proteção da cabeça contra respingos de produtos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -166,7 +143,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta9">8) Com que freqüência os funcionários usam luvas de segurança ou flanelas para proteção das mãos contra produtos químicos?
+                    <div id="pergunta8">8) Com que freqüência os funcionários usam luvas de segurança ou flanelas para proteção das mãos contra produtos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -181,7 +158,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta10">9) Com que freqüência os funcionários usam calçados que protejam os pés contra umidade e respingos de produtos químicos?
+                    <div id="pergunta9">9) Com que freqüência os funcionários usam calçados que protejam os pés contra umidade e respingos de produtos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -196,7 +173,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta11">10) Com que freqüência os funcionários usam macacão para proteção dos troncos e membros superiores e inferiores contra respingos químicos e umidades?
+                    <div id="pergunta10">10) Com que freqüência os funcionários usam macacão para proteção dos troncos e membros superiores e inferiores contra respingos químicos e umidades?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -211,7 +188,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta12">11) Com que freqüência os funcionários usam conjunto de segurança formado por calça e blusa , para proteção contra umidade e respingos de produtos químicos?
+                    <div id="pergunta11">11) Com que freqüência os funcionários usam conjunto de segurança formado por calça e blusa , para proteção contra umidade e respingos de produtos químicos?
                         <form>
                             <input type="radio" name="question" value="1">Nunca
                             <br>
@@ -226,7 +203,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta13">12) O estado de conservação do piso pode ser caracterizado (quando tomado como critério: não ser escorregadio, não apresentar saliências e nem depressões) como:
+                    <div id="pergunta12">12) O estado de conservação do piso pode ser caracterizado (quando tomado como critério: não ser escorregadio, não apresentar saliências e nem depressões) como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -241,7 +218,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta14">13) A condição de iluminação artificial dos locais de trabalho pode ser caracterizada como:
+                    <div id="pergunta13">13) A condição de iluminação artificial dos locais de trabalho pode ser caracterizada como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -256,7 +233,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta15">14) O estado de conservação da cobertura pode ser caracterizado, no que concerne assegurar proteção contra as intempéries, como:
+                    <div id="pergunta14">14) O estado de conservação da cobertura pode ser caracterizado, no que concerne assegurar proteção contra as intempéries, como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -271,7 +248,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta16">15) O destino dos resíduos sólidos (óleo, embalagem de lubrificantes, filtros de óleo, embalagem de xampu, limpa-vidros, removedores, etc.) pode ser caracterizado como:
+                    <div id="pergunta15">15) O destino dos resíduos sólidos (óleo, embalagem de lubrificantes, filtros de óleo, embalagem de xampu, limpa-vidros, removedores, etc.) pode ser caracterizado como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -286,7 +263,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta17">16) O sistema (canaletas) de escoamento de água e resíduos sólidos do local de trabalho pode ser caracterizado, como:
+                    <div id="pergunta16">16) O sistema (canaletas) de escoamento de água e resíduos sólidos do local de trabalho pode ser caracterizado, como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -301,7 +278,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta18">17) O sistema de emissão de efluentes domésticos/sanitários (sistema de tratamento, caixa separadora água/óleo, etc), pode ser caracterizado como:
+                    <div id="pergunta17">17) O sistema de emissão de efluentes domésticos/sanitários (sistema de tratamento, caixa separadora água/óleo, etc), pode ser caracterizado como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -316,7 +293,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta19">18) A disposição das sinalizações das ações perigosas, como “não fumar”, “inflamável”, “não é permitido o uso de celular” e “desligar o motor”, pode ser caracterizada como
+                    <div id="pergunta18">18) A disposição das sinalizações das ações perigosas, como “não fumar”, “inflamável”, “não é permitido o uso de celular” e “desligar o motor”, pode ser caracterizada como
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -331,7 +308,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta20">19) A conduta para descarga dos líquidos inflamáveis de caminhões tanques, no que concerne a utilização dos procedimentos de seguranças como veículo ligado ao fio terra, uso de cones e fitas, pode ser caracterizado como
+                    <div id="pergunta19">19) A conduta para descarga dos líquidos inflamáveis de caminhões tanques, no que concerne a utilização dos procedimentos de seguranças como veículo ligado ao fio terra, uso de cones e fitas, pode ser caracterizado como
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -346,7 +323,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta21">20) As condições de segurança do veículo de transporte dos combustíveis, observando-se a existência de extintor de incêndio com prazo de validade correta, ausência de vazamentos nos registros e tanques e situação mecânica, podem ser caracterizadas como:
+                    <div id="pergunta20">20) As condições de segurança do veículo de transporte dos combustíveis, observando-se a existência de extintor de incêndio com prazo de validade correta, ausência de vazamentos nos registros e tanques e situação mecânica, podem ser caracterizadas como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -361,7 +338,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta22">21) O procedimento para evitar e combater incêndios, quando analisados equipamentos adequados (aspecto externo, lacres, manômetros, bicos, prazos de validades e tipo do extintor), equipamentos em número e disposições corretas (respeitar o número de extintores exigido e fácil acesso) e execução de exercícios de combate a fogo, pode ser caracterizado como:
+                    <div id="pergunta21">21) O procedimento para evitar e combater incêndios, quando analisados equipamentos adequados (aspecto externo, lacres, manômetros, bicos, prazos de validades e tipo do extintor), equipamentos em número e disposições corretas (respeitar o número de extintores exigido e fácil acesso) e execução de exercícios de combate a fogo, pode ser caracterizado como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -376,7 +353,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta23">22) A conduta de prevenção e detecção de vazamentos de combustíveis em tanques, quando observada vida útil, condições do terreno, material do tanque (possibilidade de corrosão), pode ser caracterizada como:
+                    <div id="pergunta22">22) A conduta de prevenção e detecção de vazamentos de combustíveis em tanques, quando observada vida útil, condições do terreno, material do tanque (possibilidade de corrosão), pode ser caracterizada como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -391,7 +368,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta24">23) As condições para descanso dos trabalhadores que realizam suas atividades de pé (existência de assentos em locais que possam ser utilizados pelos funcionários durante as pausas) podem ser caracterizadas como:
+                    <div id="pergunta23">23) As condições para descanso dos trabalhadores que realizam suas atividades de pé (existência de assentos em locais que possam ser utilizados pelos funcionários durante as pausas) podem ser caracterizadas como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -406,7 +383,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta25">24) Quanto ao ambiente de trabalho quando analisado a preservação da integridade física e mental dos trabalhadores (utilização da atenção concentrada e da atenção dispersa ao mesmo tempo, e nível de stress), este pode ser classificado como:
+                    <div id="pergunta24">24) Quanto ao ambiente de trabalho quando analisado a preservação da integridade física e mental dos trabalhadores (utilização da atenção concentrada e da atenção dispersa ao mesmo tempo, e nível de stress), este pode ser classificado como:
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -421,7 +398,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta26">25)Analisando as condições e fornecimento dos equipamentos e ferramentas utilizadas pelos trabalhadores em seus ambientes de trabalho, usando como critério o estado de conservação e a finalidade do equipamento e da ferramenta quanto à natureza do trabalho, estas podem ser classificadas como
+                    <div id="pergunta25">25)Analisando as condições e fornecimento dos equipamentos e ferramentas utilizadas pelos trabalhadores em seus ambientes de trabalho, usando como critério o estado de conservação e a finalidade do equipamento e da ferramenta quanto à natureza do trabalho, estas podem ser classificadas como
                         <form>
                             <input type="radio" name="question" value="1">Muito ruim
                             <br>
@@ -436,7 +413,7 @@
                             <input type="button" value="Alternativa Selecionada" onClick="RadioHab();">
                         </form>
                     </div>
-                    <div id="pergunta27">
+                    <div id="pergunta26">
                         <h2>Questionário Concluido. Obrigado!!!</h2>
                     </div>
                 </body>
