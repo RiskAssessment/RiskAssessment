@@ -2,7 +2,7 @@
     <?php
 
     include_once('conexão.php');
-   <?php //utilização de namespaces namespace controle;
+    //utilização de namespaces namespace controle;
        include 'processaAcesso.php';
 use processaAcesso as processaAcesso;
 $controle = new \processaAcesso\ProcessaAcesso;
