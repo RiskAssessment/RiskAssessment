@@ -252,8 +252,7 @@ a.button {
     padding: 5px 5px;
     margin: 0px;
 }
-/*Subpage Boxs END*/
-/*Footer*/
+
 
 #footer {
     background: #222222;
@@ -380,3 +379,43 @@ label {
     color: #999;
     background: #dcdcdc;
     border-color: #999;
+    
+}
+
+
+
+busc{
+    width: auto;
+     float: left;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    background: #fcfcfc;
+    border-radius: 5px;
+    color: #BA5301;
+    margin: auto;
+  
+}
+
+button{
+    width: auto;
+  float: left;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    background: #fcfcfc;
+    border-radius: 5px;
+    color: #BA5301;
+    margin: auto;
+  
+    
+}
+titulo{
+
+    font-size: 40px;
+}
+
+busca{
+ 
+    width: auto;
+    
+}
+
