@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -9,12 +10,12 @@
 </head>
 
 <body>
-    <!--Header Begin-->
+    
     <div id="header">
         <div class="center">
             <div id="logo"><a href="index.html">Risk Assessment</a>
             </div>
-            <!--Menu Begin-->
+            
             <div id="menu">
                 <ul>
                     <li><a href="index.html"><span>Início</span></a>
@@ -35,29 +36,28 @@
             <h2>Faça seu cadastro para responder o questionário !</h2>
         </div>
     </div>
-    <!--Header END-->
-    <!--SubPage Toprow Begin-->
+
     <div id="midrow">
         <div class="center">
             <div class="textbox2">
                 <br />
                 <div>
-                    <form action="cadastrando.php" method="POST">
+                    <form action="Cadastro.php" method="POST">
                         <fieldset>
                             <legend>Cadastro</legend>
 
                             <label>
                                 Nome
-                                <input class="field" name="nome" type="text"  />
+                                <input class="field" name="nome" type="text" required name=nome />
                             </label>
 
                             <label>
                                 CPF
-                                <input class="field" name="cpf" type="text"  />
+                                <input class="field" name="cpf" type="text" required name=cpf  />
                             </label>
-                            <label>
+                            <label> 
                                 Empresa
-                                <input class="field" name="empresa" type="text" />
+                                <input class="field" name="empresa" type="text" required name=empresa />
                             </label>
                            <!-- <a class="button" href="questionario.html"><span>  ENVIAR</span></a> -->
                              
