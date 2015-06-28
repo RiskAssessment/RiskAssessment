@@ -19,17 +19,4 @@ function proximaPergunta() {
     }
 }
 
-function soma() {
-    RadioHab();
-}
-function RadioHab() {
 
-    var soma =0;
-    var name=null;
-    for (i=1;i<=25;i++){
-        name = "question"+i;
-        var valorResposta =$('input:radio[name='+name+']:checked','#questionario1').val();
-        
-      soma= parseInt(valorResposta)+soma;
-    }
-}
